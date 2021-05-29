@@ -1,0 +1,381 @@
+/* --- Global CSS --- */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #333646;
+  margin: 0;
+  padding: 0;
+  line-height: 1.625;
+  font-size: 1rem;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  color: #e2e2e2;
+}
+
+p,
+h3,
+h5 {
+  color: #a7a7a7;
+  margin: 0;
+}
+
+h3.sub-title,
+p.desc-page,
+p.desc-title {
+  font-size: 1rem;
+}
+
+p.desc-page,
+p.desc-title {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+h2.title-page {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+a.link {
+  text-decoration: none;
+  color: #f1bf5b;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+a.link span {
+  font-size: 1.25rem;
+}
+
+a.link i {
+  margin-left: 10px;
+}
+
+/* --- End of Global CSS --- */
+
+/* --- Header --- */
+header .navbar {
+  padding: 40px 6% 30px 0;
+}
+
+header .navbar .navbar-brand img {
+  width: 40px;
+  height: 40px;
+}
+
+header .navbar .nav-link.active {
+  color: #e2e2e2 !important;
+}
+
+header .navbar .nav-link {
+  color: #656565 !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 57px;
+  position: relative;
+  z-index: 0;
+}
+
+header .navbar .nav-link.active::before {
+  content: "";
+  position: absolute;
+  background-color: #f1bf5b;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+}
+
+/* --- End of Header --- */
+
+/* --- Top Page CSS --- */
+
+/* -- Top Page Name -- */
+.top-page {
+  padding: 60px 0 120px 0;
+}
+
+.top-page .my-name {
+  margin-top: -30px;
+}
+
+.top-page .my-name h1 {
+  font-size: 4.6rem;
+  margin: 0;
+}
+
+.top-page .my-name hr {
+  width: 2rem;
+  height: 3px;
+  background-color: #f1bf5b;
+  margin: 6px auto 0 4px;
+}
+
+.top-page .profile {
+  position: relative;
+}
+
+.top-page .cont-photos {
+  position: absolute;
+  width: 100%;
+  left: 150px;
+  top: -130px;
+  z-index: -100;
+}
+
+.top-page .cont-photos img {
+  width: 80%;
+  transform: scaleX(-1);
+}
+
+.top-page .my-partners {
+  position: absolute;
+  bottom: -10px;
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-page .my-partners .photo.active {
+  width: 70px;
+  height: 70px;
+}
+
+.top-page .my-partners .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 3px #f1bf5b;
+}
+
+.top-page .my-partners .photo img {
+  width: inherit;
+  height: inherit;
+  z-index: -1;
+}
+
+.top-page a.link span {
+  text-decoration: underline;
+}
+/* -- End of Top Page Name -- */
+/* --- End of Top Page CSS --- */
+
+/* --- Layanan CSS --- */
+.layanan {
+  background-color: #252734;
+  padding: 50px 0;
+}
+
+.layanan .value {
+  display: flex;
+  align-items: flex-end;
+}
+
+.layanan .value .sub-value {
+  margin-left: 10px;
+  line-height: 1.15;
+}
+
+.layanan .value h1 {
+  font-size: 5.2rem;
+  color: #f1bf5b;
+}
+
+.layanan .value .sub-value {
+  color: #e2e2e2;
+  font-weight: 600;
+}
+
+.layanan .cont-card {
+  margin-top: 40px;
+}
+
+.layanan .cont-card .card {
+  border-radius: 0;
+  background-color: #333646;
+}
+
+.layanan .cont-card .card-body .move {
+  bottom: 0;
+  padding: 100px 30px 30px 30px;
+}
+
+.layanan .cont-card .active .card {
+  background-color: #f1bf5b;
+}
+
+.layanan .cont-card .card .card-title {
+  color: #e2e2e2;
+  font-size: 1.7rem;
+  margin-bottom: unset;
+}
+
+.layanan .cont-card .card .sub-title {
+  color: #e2e2e2;
+  margin-bottom: 0 !important;
+}
+
+.layanan .cont-card .active .card .card-title,
+.layanan .cont-card .active .card .sub-title {
+  color: #252734;
+  font-weight: 700;
+}
+
+.layanan .cont-card a {
+  text-decoration: none;
+}
+
+.layanan .cont-card a:hover {
+  text-decoration: none;
+}
+/* --- End of Layanan CSS --- */
+
+/* --- Portofolio CSS --- */
+
+.portofolio {
+  margin-top: 50px;
+  margin-bottom: -100px;
+}
+
+.portofolio .costum-cont {
+  columns: 2;
+  grid-row: 2;
+  column-gap: 150px;
+  margin: 20px auto;
+}
+.portofolio .costum-cont .box {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 100px;
+  padding: 20px 0 0 0;
+  background-color: #252734;
+  /* margin-bottom: 100px; */
+}
+
+.portofolio .costum-cont .box.non-black {
+  background-color: unset !important;
+}
+
+.portofolio .costum-cont .box.margin-bt {
+  margin-bottom: 380px;
+}
+
+.portofolio .costum-cont .porto-text {
+  padding: 20px 40px;
+}
+
+.portofolio .costum-cont .porto-text h3 {
+  font-size: 2.4rem;
+}
+
+.portofolio .costum-cont .porto-img {
+  text-align: center;
+  margin-top: 80px;
+  position: relative;
+}
+
+.portofolio .costum-cont .porto-img img {
+  width: 115%;
+  margin-left: -30px;
+  margin-bottom: -60px;
+  transform: rotate(350deg);
+}
+
+/* --- End of Portofolio CSS --- */
+
+/* --- Order CSS --- */
+.order {
+  padding: 50px 0;
+  background-color: #252734;
+}
+
+.order label {
+  color: #e2e2e2;
+  font-weight: 600;
+}
+
+.order form input,
+.order form textarea,
+.order form textarea:focus,
+.order form textarea:active,
+.order form input.form-control:focus,
+.order form input:focus,
+.order form input:active {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 0;
+  color: #e2e2e2;
+  background-color: transparent;
+  border-bottom: 2px solid #656565;
+}
+
+.order button.btn {
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: none;
+  color: #f1bf5b;
+  padding: 0;
+}
+
+.order button.btn span {
+  font-size: 1.25rem;
+}
+
+.order button.btn i {
+  margin-left: 10px;
+}
+/* --- End of Order CSS --- */
+
+/* --- Footer CSS --- */
+
+footer {
+  padding: 20px 0 50px 0;
+  background-color: #252734;
+}
+
+footer .logo {
+  margin-bottom: 10px;
+}
+
+footer .logo .img {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  background-color: #f1bf5b;
+  border-radius: 50%;
+}
+
+footer .text-footer {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+footer .text-footer span.yl {
+  color: #f1bf5b;
+}
+
+footer .icon-sosmed {
+  width: 10%;
+  height: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* --- End of Footer CSS --- */
